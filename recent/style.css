@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "montserrat", sans-serif;
+
 }
 
 .header {
@@ -12,11 +13,12 @@
   padding: 0 20px;
   color: #fff;
   display: block;
+  z-index: 1;
 }
 
-/* div.header>input {
+div.header>input {
   position: sticky;
-} */
+}
 
 .logo {
   line-height: 100px;
@@ -27,6 +29,7 @@
 .menu {
   float: right;
   line-height: 100px;
+
 }
 
 .menu a {
@@ -65,6 +68,8 @@
   z-index: -1111;
 }
 
+
+
 .content {
   padding: 0 20px;
 }
@@ -88,9 +93,12 @@
 
   .menu {
     position: fixed;
+    /* display: flex; */
+    /* flex-direction: row;  */
     width: 100%;
-    height: 25vh;
+    height: 10vh;
     background: #333;
+    opacity: .8;
     right: 100%;
     top: 0;
     text-align: center;
@@ -101,7 +109,7 @@
 
   .menu a {
     display: block;
-    padding: 20px;
+    padding: 10px;
   }
 
   .hide-menu-btn {
@@ -119,6 +127,10 @@
     height: 100%;
   }
 
+  #project {
+    background-color: black;
+    height: 50vh;
+  }
 
   .about-Background {
     padding-top: 4em;
@@ -127,7 +139,101 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
-    border: 2px solid red;
+    height: 100vh;
+    /* position: relative; */
+    /* border: 1em solid red; */
   }
+
+  .content_over_Image {
+    position: absolute;
+    bottom: 4em;
+    left: 4em;
+    top: 16em;
+    color: white;
+    font-weight: bold;
+
+    /* font-size: 1em; */
+    left: 3em;
+    right: 2em;
+    line-height: 2em;
+  }
+
+  .content_over_Image>#about>h2 {
+    font-size: xx-large;
+    margin-bottom: 1em;
+
+  }
+
+  /* Grid Container for projects  */
+  .project-grid {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100vw;
+    background-color: black;
+    gap: 2rem;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+
+    justify-items: center;
+    /* position: absolute; */
+
+
+  }
+
+  .grid-image-item {
+    height: 15vh;
+    width: 65vw;
+    border: 1px solid white;
+    display: block;
+    /* position: relative;
+    top: 2em; */
+
+
+  }
+
+  .image_content {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+  }
+
+
+  .image_content>a {
+    background-color: grey;
+    width: 66vw;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    text-decoration: none;
+
+  }
+
+  .contact_media>h2 {
+    text-align: center;
+    font-weight: bolder;
+    padding: 1.5em;
+  }
+
+  .social_icons {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 1em;
+    font-size: 3em;
+    justify-content: space-evenly;
+    padding-bottom: 1em;
+  }
+
+  footer {
+
+    background-color: aqua;
+    text-align: center;
+    padding: 1em 0;
+    font-weight: bold;
+  }
+
 }
