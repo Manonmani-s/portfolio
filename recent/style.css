@@ -129,7 +129,7 @@ div.header>input {
 
   #project {
     background-color: black;
-    height: 50vh;
+    /* height: 100vh; */
   }
 
   .about-Background {
